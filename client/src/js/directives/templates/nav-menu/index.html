@@ -1,0 +1,30 @@
+<div id="nav-menu-wrap">
+  <nav>
+    <ul>
+      <li id="menu-home" ng-class="{'active': $state.current.name == 'app.home'}">
+        <a ui-sref="app.home" ng-click="toggled.isToggled = false">home</a>
+      </li>
+      <li id="menu-portfolio" ng-class="{'active': $state.includes('app.portfolio')}">
+        <a ui-sref="app.portfolio.home" ng-click="toggled.isToggled = false">portfolio</a>
+      </li>
+      <li id="menu-about" ng-class="{'active': $state.current.name == 'app.about'}">
+        <a ui-sref="app.about" ng-click="toggled.isToggled = false">about</a>
+      </li>
+      <li id="menu-contact" ng-class="{'active': $state.current.name == 'app.contact'}">
+        <a ui-sref="app.contact" ng-click="toggled.isToggled = false">contact</a>
+      </li>
+    </ul>
+  </nav>
+  <footer>
+    <hr>
+
+    <div class="info">
+      <a href="mailto:alex@design2web.com">alex@design2web.com</a>
+    </div>
+    <p class="details">
+      <small>
+        &copy; 2016 - Portfolio of Alex Di Vito. All rights reserved.
+      </small>
+    </p>
+  </footer>
+</div>

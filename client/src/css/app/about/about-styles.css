@@ -1,0 +1,152 @@
+#about-section {
+  min-height: 100%;
+  min-width: 100%;
+  background-color: #eafff7;
+  padding-top: 8%;
+  padding-bottom: 8%;
+}
+#about-section .about-me-intro {
+  margin-bottom: 40px;
+}
+#about-section .big-icon-wrap {
+  float: left;
+  position: relative;
+}
+#about-section .big-icon-wrap i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  font-size: 2.5em;
+  color: white;
+}
+#about-section .big-icon-wrap .big-icon {
+  height: 90px;
+  display: inline;
+  fill: #337ab7;
+  stroke: black;
+  stroke-width: 1px;
+}
+#about-section .about-me-skills ul {
+  font-size: 1.25em;
+}
+#about-section .about-me-skills .list-half {
+  width: 45%;
+  display: inline-block;
+}
+#about-section .about-me-skills .list-half li {
+  display: list-item;
+}
+#about-section .about-me-skills .portfolio-header {
+  padding-top: 25px;
+  padding-bottom: 30px;
+  margin: 0;
+}
+#about-section .icons {
+  width: 100%;
+  height: 80px;
+  text-align: center;
+}
+#about-section .icons .icon {
+  width: 60px;
+  height: 60px;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+}
+#about-section .icons .icon:first-child, #about-section .icons .icon:last-child {
+  top: -32px;
+}
+#about-section .icons .icon .shape {
+  transition: transform 0.8s ease;
+  -webkit-transition: transform 0.8s ease;
+  -moz-transition: transform 0.8s ease;
+  -o-transition: transform 0.8s ease;
+}
+#about-section .icons .icon .shape-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+#about-section .icons .icon:hover .shape {
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+}
+#about-section .icons .icon:hover .shape-hover {
+  animation: 500ms ripple ease-in;
+}
+#about-section .icons .icon i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  font-size: 2em;
+  color: white;
+}
+#about-section .icons .icon svg {
+  height: 60px;
+  width: 60px;
+  fill: #337ab7;
+}
+#about-section .icons .icon svg:first-child {
+  stroke: black;
+  stroke-width: 1px;
+}
+#about-section .about-me-photo {
+  float: right;
+  margin-top: 6%;
+  width: 35%;
+  margin-left: 6%;
+  min-width: 260px;
+  display: block;
+  position: relative;
+}
+#about-section .about-me-photo figure {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+  display: block;
+}
+#about-section .about-me-photo figure img.about-me-img {
+  position: absolute;
+  width: 65%;
+  height: 65%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+/* SMARTPHONES PORTRAIT */
+/* SMARTPHONES LANDSCAPE */
+@media only screen and (max-width: 480px) {
+  #about-section {
+    padding-top: 20px;
+  }
+  #about-section .about-me-photo {
+    float: none;
+    width: 100%;
+    margin: 0;
+  }
+}
+/* TABLETS PORTRAIT */
+/* TABLET LANDSCAPE / DESKTOP */
+/* DESKTOP ONLY */
+@media only screen and (min-width: 1025px) {
+  #about-section {
+    padding-top: 80px;
+  }
+}

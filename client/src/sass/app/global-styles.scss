@@ -1,0 +1,43 @@
+.italic-header {
+  font-size: 1.8em;
+  margin-bottom: 6%;
+  margin-top: 6%;
+  color: #727272;
+}
+
+.portfolio-header {
+  color: #337ab7;
+  font-size: 3em;
+  font-family: Arial, sans-serif;
+}
+
+button:active,
+button:focus {
+  outline: none !important;
+}
+
+/* SMARTPHONES PORTRAIT */
+@media only screen and (max-width: 300px) {
+
+}
+
+/* SMARTPHONES LANDSCAPE */
+@media only screen and (max-width: 480px) {
+
+}
+
+/* TABLETS PORTRAIT */
+@media only screen and (max-width: 768px) {
+  .italic-header {
+    font-size: 1.45em;
+  }
+}
+
+
+/* TABLET LANDSCAPE / DESKTOP */
+@media only screen and (max-width: 1024px) {
+}
+
+/* DESKTOP ONLY */
+@media only screen and (min-width: 1025px) {
+}

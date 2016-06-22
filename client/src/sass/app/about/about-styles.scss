@@ -1,0 +1,194 @@
+#about-section {
+  min-height: 100%;
+  min-width: 100%;
+  background-color: #eafff7;
+  padding-top: 8%;
+  padding-bottom: 8%;
+
+  .about-me-intro {
+    margin-bottom: 40px;
+  }
+
+  .big-icon-wrap {
+    float: left;
+    position: relative;
+
+    i {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+      font-size: 2.5em;
+      color: white;
+    }
+
+    .big-icon {
+      height: 90px;
+      display: inline;
+      fill: #337ab7;
+      stroke: black;
+      stroke-width: 1px;
+    }
+  }
+
+  .about-me-skills {
+
+    ul {
+      font-size: 1.25em;
+    }
+
+    .list-half {
+      width: 45%;
+      display: inline-block;
+
+      li {
+        display: list-item;
+      }
+    }
+
+    .portfolio-header {
+      padding-top: 25px;
+      padding-bottom: 30px;
+      margin: 0;
+    }
+  }
+
+  .icons {
+    width: 100%;
+    height: 80px;
+    text-align: center;
+
+    .icon {
+      width:60px;
+      height: 60px;
+      position: relative;
+      display: inline-block;
+      cursor: pointer;
+      text-align: center;
+
+      &:first-child,
+      &:last-child {
+        top: -32px;
+      }
+
+      .shape {
+        transition: transform 0.8s ease;
+        -webkit-transition: transform 0.8s ease;
+        -moz-transition: transform 0.8s ease;
+        -o-transition: transform 0.8s ease;
+      }
+
+      .shape-hover {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+      }
+
+      &:hover {
+        .shape {
+          transform: rotate(180deg);
+          -webkit-transform: rotate(180deg);
+          -moz-transform: rotate(180deg);
+          -o-transform: rotate(180deg);
+        }
+
+        .shape-hover {
+          animation: 500ms ripple ease-in;
+        }
+      }
+
+      i {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        font-size: 2em;
+        color: white;
+      }
+
+      svg {
+        height: 60px;
+        width: 60px;
+        fill: #337ab7;
+      }
+      svg:first-child {
+        stroke: black;
+        stroke-width: 1px;
+      }
+    }
+  }
+
+  .about-me-photo {
+    float: right;
+    margin-top: 6%;
+    width: 35%;
+    margin-left: 6%;
+    min-width: 260px;
+    display: block;
+    position: relative;
+
+    figure {
+      position: relative;
+      width: 100%;
+      height: 0;
+      padding-bottom: 100%;
+      display: block;
+
+      img.about-me-img {
+        position: absolute;
+        width: 65%;
+        height: 65%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+      }
+    }
+  }
+}
+
+/* SMARTPHONES PORTRAIT */
+@media only screen and (max-width: 300px) {
+
+}
+
+/* SMARTPHONES LANDSCAPE */
+@media only screen and (max-width: 480px) {
+
+  #about-section {
+    padding-top: 20px;
+
+    .about-me-photo {
+      float: none;
+      width: 100%;
+      margin: 0;
+    }
+  }
+
+}
+
+/* TABLETS PORTRAIT */
+@media only screen and (max-width: 768px) {
+
+}
+
+
+/* TABLET LANDSCAPE / DESKTOP */
+@media only screen and (max-width: 1024px) {
+}
+
+/* DESKTOP ONLY */
+@media only screen and (min-width: 1025px) {
+  #about-section {
+    padding-top: 80px;
+  }
+}

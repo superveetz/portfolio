@@ -1,0 +1,121 @@
+@keyframes ripple {
+  from {
+    opacity: 1;
+    transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+  }
+  to {
+    opacity: 0;
+    transform: scale(1.8);
+    -webkit-transform: scale(1.8);
+    -moz-transform: scale(1.8);
+    -o-transform: scale(1.8);
+    -ms-transform: scale(1.8);
+  }
+}
+@-webkit-keyframes ripple {
+  from {
+    opacity: 1;
+    transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+  }
+  to {
+    opacity: 0;
+    transform: scale(1.35);
+    -webkit-transform: scale(1.35);
+    -moz-transform: scale(1.35);
+    -o-transform: scale(1.35);
+    -ms-transform: scale(1.35);
+  }
+}
+#portfolio-section {
+  background-color: #eafff7;
+  text-align: left;
+}
+#portfolio-section .portfolio-article {
+  padding-top: 12%;
+  padding-bottom: 12%;
+  height: 70%;
+  width: 100%;
+}
+#portfolio-section .portfolio-article .portfolio-paragraph {
+  color: black;
+  font-family: 'Open Sans', arial, sans-serif;
+}
+#portfolio-section .portfolio-article .portfolio-link {
+  width: 80%;
+  height: 80%;
+  display: block;
+  position: relative;
+  margin: 0 auto;
+}
+#portfolio-section .portfolio-article .portfolio-link figure {
+  width: 80%;
+  height: 80%;
+  display: block;
+  position: relative;
+}
+#portfolio-section .portfolio-article .portfolio-link figure .shape-hover {
+  position: absolute;
+  opacity: 0;
+  fill: #337ab7;
+}
+#portfolio-section .portfolio-article .portfolio-link figure:hover .shape {
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+}
+#portfolio-section .portfolio-article .portfolio-link figure:hover .shape-hover {
+  animation: 500ms ripple ease-in;
+}
+#portfolio-section .portfolio-article .portfolio-link figure .shape {
+  transition: transform 0.8s ease;
+  -webkit-transition: transform 0.8s ease;
+  -moz-transition: transform 0.8s ease;
+  -o-transition: transform 0.8s ease;
+}
+#portfolio-section .portfolio-article .portfolio-link figure .shape .hexagon {
+  shape-rendering: crispEdges;
+  stroke-width: 0.25;
+  stroke: black;
+  fill: #337ab7;
+}
+#portfolio-section .portfolio-article .portfolio-link figure .portfolio-img {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  top: 50%;
+  left: 50%;
+  z-index: 1000;
+}
+
+/* SMARTPHONES PORTRAIT */
+/* SMARTPHONES LANDSCAPE */
+/* TABLETS PORTRAIT */
+/* TABLET LANDSCAPE / DESKTOP */
+@media only screen and (max-width: 992px) {
+  .portfolio-article {
+    display: block;
+  }
+}
+/* DESKTOP ONLY */
+@media only screen and (min-width: 993px) {
+  .portfolio-article {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+  }
+  .portfolio-article .portfolio-col {
+    flex: 1;
+  }
+}

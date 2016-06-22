@@ -1,0 +1,11 @@
+<div id="main-nav" class="starting">
+
+  <button id="toggle" ng-class="{'on': toggled.isToggled }" ng-click="toggled.isToggled = !toggled.isToggled"><span></span></button>
+
+    <span id="svg-wrap">
+      <svg-logo></svg-logo>
+    </span>
+
+  <nav-menu ng-if="toggled.isToggled" toggled="toggled"></nav-menu>
+
+</div>
